@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1 id="myHeading">Hello World</h1>
-    <button onclick="changeText();">Click Me</button>
-    <button onclick="resetText();">Reset</button>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="text-center">
+        <h1 id="myHeading" class="text-4xl font-bold text-blue-500 mb-4">Hello World</h1>
+        <button onclick="changeText();" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Click Me</button>
+        <button onclick="resetText();" class="bg-red-500 text-white py-2 px-4 rounded ml-4 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75">Reset</button>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
